@@ -20,7 +20,7 @@ public class CatTest {
     }
 
     @Test
-    public void checkCatCanWakep() {
+    public void checkCatCanWakeup() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         domesticCat.wakeUp();
