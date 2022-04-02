@@ -13,8 +13,6 @@ import static org.mockito.Mockito.mock;
 
 public class CatTest {
 
-    private final String[] randomEatMsg = {"Purrrrrrr", "It will do I suppose"};
-
     private CatInterface domesticCat;
     private CatInterface lionCat;
     private CatInterface cheetahCat;
