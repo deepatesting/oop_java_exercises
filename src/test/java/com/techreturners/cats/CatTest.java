@@ -2,8 +2,13 @@ package com.techreturners.cats;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
+
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
+import static org.mockito.Matchers.contains;
+import static org.mockito.Mockito.mock;
 
 
 public class CatTest {
@@ -13,6 +18,7 @@ public class CatTest {
     private CatInterface domesticCat;
     private CatInterface lionCat;
     private CatInterface cheetahCat;
+    private final String[] testMsg = {"Purrrrrrr", "It will do I suppose"};
 
 
     @Before
@@ -20,6 +26,7 @@ public class CatTest {
         domesticCat = new DomesticCat("domestic", 23, "Purrrrrrr");
         lionCat = new LionCat("wild", 1100, "Roar!!!!");
         cheetahCat = new CheetahCat("wild", 1100, "Zzzzzzz");
+
     }
 
     @Test
@@ -68,7 +75,9 @@ public class CatTest {
 
     @Test
     public void feedTheCat() {
+        assertTrue(Arrays.asList(testMsg).contains(domesticCat.eat()));
+        //assertNotNull(domesticCat.eat());
         //assertEquals("Purrrrrrr", domesticCat.eat());
-        assertNotNull(domesticCat.eat());
     }
+
 }
