@@ -2,14 +2,10 @@ package com.techreturners.cats;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import java.util.Arrays;
 
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.contains;
-import static org.mockito.Mockito.mock;
-
 
 public class CatTest {
 
