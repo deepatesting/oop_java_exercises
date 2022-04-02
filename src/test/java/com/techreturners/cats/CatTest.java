@@ -74,8 +74,6 @@ public class CatTest {
     @Test
     public void feedTheCat() {
         assertTrue(Arrays.asList(testMsg).contains(domesticCat.eat()));
-        //assertNotNull(domesticCat.eat());
-        //assertEquals("Purrrrrrr", domesticCat.eat());
     }
 
 }
